@@ -1,0 +1,28 @@
+exit # don't you be running this accidentally, it's just documentation
+
+# Generate us a klatsch of different kinds of keys for tests.
+
+# Get us a domain key.
+gkgen test.yammer.net /'pygale test playground'
+
+# Generate us some regular folks
+for folk in bull harry christine reinhold selma; do
+  gkgen $folk@test.yammer.net /Z
+done
+
+# A null key
+gkgen -w court@test.yammer.net /'Criminal Court Part 2 is now in session'
+
+# A wildcard key and one-member public group
+gkgen -m court{,.\*}@test.yammer.net
+
+# Some group keys
+gkgen -m{bull,selma}@test.yammer.net bailiffs@test.yammer.net
+gkgen -m{christine,reinhold}@test.yammer.net attorneys@test.yammer.net
+
+# A symlink key
+gkgen -s {reinhold,dan}@test.yammer.net
+
+mkdir -p public private
+cp $HOME/.gale/auth/private/*test.yammer.net.gpri private
+cp $HOME/.gale/auth/private/*test.yammer.net.gpub public
