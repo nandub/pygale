@@ -1,0 +1,7 @@
+include Changelog
+include documentation.txt
+include gsub.py
+include gsend.py
+include pygale-config
+include py-openssl/*.h
+recursive-include py-openssl *.c
