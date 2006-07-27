@@ -1,4 +1,0 @@
-1.2.2:
-	Preserve puff callback across server reconnection
-	Update gsub.py to use the new semantics
-	Patch engine.py to work with PyGtk >= 1.99.14
