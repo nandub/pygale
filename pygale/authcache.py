@@ -430,7 +430,7 @@ def import_privkey(key):
   return keyobj
 
 # Recipients is a list of either string key names (e.g.,
-# "tlau@ofb.net") or Key objects
+# "bull@test.yammer.net") or Key objects
 def have_a_privkey(recipients):
   """Return 1 iff I have at least one of the private keys in this
   list of ids"""

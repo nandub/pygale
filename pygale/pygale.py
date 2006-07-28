@@ -1072,7 +1072,7 @@ def id_category(name, midstr='', postfix=''):
 #     engine.engine.process(authcache.AKD_TIMEOUT)
 #   return blocker.val
 
-# Look up a list of names (e.g., "tlau@ofb.net") and return a list of
+# Look up a list of names (e.g., "bull@test.yammer.net") and return a list of
 # Key objects.  If all=0, return as soon as you find any one of the
 # ids otherwise, return only with all ids.
 # If do_akd is 0, do not do AKD to find these keys.
