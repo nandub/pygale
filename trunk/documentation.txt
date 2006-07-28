@@ -213,7 +213,7 @@ Puff.get_loc_list()
 Puff.get_signer()
         Get the signer of the puff.  The return value is None if a verification
         operation is in progress (see GaleClient.set_verify_callback), a
-        string representing the signer's id (e.g.  "tlau@cs.washington.edu")
+        string representing the signer's id (e.g.  "bull@test.yammer.net")
         if the puff was signed, the string "*unsigned*" if the puff was not
         signed, or the string "*unverified*" if it was signed but the
         signature could not be verified.
