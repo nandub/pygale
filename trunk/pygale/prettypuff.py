@@ -57,7 +57,7 @@ def show(puff, file=None, termwidth=80):
 	sender = puff.get_text_first('message/sender', 'Unknown sender')
 	# Location, eg "pub.comp.linux@ofb.net"
 	locations = puff.get_loc()
-	# Sign: Gale ID of sender, eg "tlau@ofb.net"
+	# Sign: Gale ID of sender, eg "bull@test.yammer.net"
 	signer = puff.get_signer('Unknown sig')
 	if signer is None:
 		signer = '*unsigned*'
